@@ -115,9 +115,18 @@ document.querySelector('.b-6').onclick = t6;
 // Разделитель пробел. Если пользователь ввел 4 и нажал кнопку, мы получим:
 //     4 3 2 1
 // Задача решается с помощью цикла  while.
-
+let out7 = document.querySelector('.out-7')
+let input7 = document.querySelector('.i-7')
 function t7() {
-
+  console.log(input7);
+  let i = input7.value
+    console.log(i);
+    while (i >= 0) {
+      out7.innerHTML += i + ' ';
+      console.log(out7.innerHTML);
+      i--;
+      
+    }
 }
 
 document.querySelector('.b-7').onclick = t7;
