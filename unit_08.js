@@ -35,9 +35,13 @@ document.querySelector('.b-2').onclick = t2;
 // Кнопка b-3 запускает функцию t3. Функция должна выводить в out-3 строку вида:
 //     25 24 23 22 . . 7
 // от 25 до 7 c шагом 1. Разделитель - пробел. Задача решается с помощью цикла  while.
-
+let out3 = document.querySelector('.out-3')
 function t3() {
-
+  let i = 25;
+   while (i >= 7) {
+      out3.innerHTML += i + ' ';
+      i--;
+   }
 }
 
 document.querySelector('.b-3').onclick = t3;
@@ -47,9 +51,15 @@ document.querySelector('.b-3').onclick = t3;
 //     77_74_71_68_65_62_ ... _38_35_
 // от 77 до 35 c шагом 3. Разделитель - знак подчеркивания. Задача решается с помощью цикла  while.
 
-
+let out4 = document.querySelector('.out-4')
 function t4() {
+   let i = 77;
+   while (i >= 35) {
+      
+    out4.innerHTML += i + '_'; 
+   i -= 3 
 
+   }
 }
 
 document.querySelector('.b-4').onclick = t4;
