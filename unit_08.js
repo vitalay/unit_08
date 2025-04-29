@@ -162,11 +162,20 @@ document.querySelector('.b-8').onclick = t8;
 // если ввел 8 и 6, то получим
 // 6 7 8
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл  while.
-
+let out9 = document.querySelector('.out-9')
 function t9() {
   let i91 = document.querySelector('.i-91').value
   let i92 = document.querySelector('.i-92').value
-  let i = i91
+ 
+  const start = Math.min(i91, i92);
+  const end = Math.max(i91, i92);
+  let current = start;
+  while (current <= end) {
+    out9.innerHTML += current;
+    if (current < end) out9.innerHTML += ' ';
+    current++;
+  }
+
 }
 
 document.querySelector('.b-9').onclick = t9;
