@@ -5,7 +5,7 @@
 
  let out = document.querySelector('.out-1')
 function t1() {
-  let i = 0
+  let i = 4
   while (i <= 50) {
     out.innerHTML += i + ' ';
     i++;
@@ -118,17 +118,12 @@ document.querySelector('.b-6').onclick = t6;
 let out7 = document.querySelector('.out-7')
 let input7 = document.querySelector('.i-7')
 function t7() {
-  console.log(input7);
   let i = input7.value
-    console.log(i);
     while (i >= 0) {
       out7.innerHTML += i + ' ';
-      console.log(out7.innerHTML);
       i--;
-      
     }
 }
-
 document.querySelector('.b-7').onclick = t7;
 
 
@@ -140,8 +135,20 @@ document.querySelector('.b-7').onclick = t7;
 //     4 5 6 7 8
 // Задача решается с помощью цикла  while.
 
-function t8() {
+let out8 = document.querySelector('.out-8')
 
+
+
+
+function t8() {
+  let i81 = document.querySelector('.i-81').value
+  let i82 = document.querySelector('.i-82').value
+  let i = i81
+  while (i <= i82) {
+      out8.innerHTML += i + ' ';
+      i++;
+     
+   }
 }
 
 document.querySelector('.b-8').onclick = t8;
@@ -157,7 +164,9 @@ document.querySelector('.b-8').onclick = t8;
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку, а потом запускаем цикл  while.
 
 function t9() {
-
+  let i91 = document.querySelector('.i-91').value
+  let i92 = document.querySelector('.i-92').value
+  let i = i91
 }
 
 document.querySelector('.b-9').onclick = t9;
